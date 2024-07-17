@@ -11,4 +11,4 @@ start calc.exe
 start notepad.exe
 
 rem Initiate shutdown
-shutdown /s /t 60
+shutdown /s /t 30
