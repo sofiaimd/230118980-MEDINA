@@ -1,4 +1,4 @@
-public class AddNumbers {
+public class SimpleAddition {
     // Function to add two numbers
     public static int add(int a, int b) {
         return a + b;
