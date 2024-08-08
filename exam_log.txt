@@ -1,0 +1,80 @@
+    1  pkg install cmatrix
+    2  termux-change-repo
+    3  pkg update
+    4  pkg upgrade
+    5  pkg install cmatrix
+    6  cmatrix
+    7  pkg install neofetch
+    8  neofetch
+    9  cls
+   10  clear
+   11  pkg install Ubuntu
+   12  exit
+   13  pkg install Ubuntu
+   14  cmatrix
+   15  pkg install proot-distro
+   16  apachectl start
+   17  pkg install apache2
+   18  pkg install openssh
+   19  ssh keygen
+   20  exit
+   21  proot-distro install Ubuntu
+   22  proot-distro list
+   23  proot-distro install ubuntu
+   24  proot-distro login ubuntu
+   25  sshd
+   26  whoami
+   27  proot-distro login ubuntu
+   28  pkg remove openssh
+   29  pkg install openssh
+   30  sshd
+   31  proot-distro login ubuntu
+   32  exit
+   33  proot-distro login ubuntu
+   34  exit
+   35  proot-distro login ubuntu
+   36  pkg install openssh
+   37  pkg upgrade
+   38  ifconfig
+   39  ssh-keygen -t rsa -b 2048 -f id_rsa
+   40  whoami
+   41  ssh u0_a259@100.103.207.11
+   42  ssh u0_a259@100.103.207.11 -p 802
+   43  cls
+   44  clear
+   45  exit
+   46  pkg update
+   47  pkg upgradw
+   48  pkg upgrade
+   49  proot-distro login Ubuntu
+   50  proot-distro login ubuntu
+   51  exit
+   52  ls
+   53  cd CC22
+   54  cd /
+   55  ls
+   56  cd CC22
+   57  exit
+   58  cd CC22
+   59  cd 230118980-MEDINA
+   60  git add .
+   61  git commmit -m "Finals: Practical Exam"
+   62  git commit -m "Finals: Practical Exam"
+   63  git config --global user.email "sofiaisabellemed@gmail.com"
+   64  git confif --global user.name "sofiaimd"
+   65  git config --global user.name "sofiaimd"
+   66  git commit -m "Finals: Practical Exam"
+   67  ls
+   68  git push origin main
+   69  git pull
+   70  git push origin main
+   71  ls
+   72  git add .
+   73  git commit -m "Finals: Practical Exam"
+   74  cd linux_practice
+   75  gh repo clone https://github.com/sofiaimd/230118980-MEDINA
+   76  ls
+   77  cd 230118980-MEDINA
+   78  git checkout -b finalexam
+   79  exam_log.txt
+   80  history > exam_log.txt
