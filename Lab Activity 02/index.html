@@ -1,179 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Delvaugh</title>
-  <script>
-    // Toggle the category menu (hamburger menu)
-    function toggleMenu() {
-      var menu = document.getElementById("category-menu");
-      if (menu.style.display === "block") {
-        menu.style.display = "none";
-      } else {
-        menu.style.display = "block";
-      }
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Delvaugh</title>
+        <script>
+            // Toggle the category menu (hamburger menu)
+            function toggleMenu() {
+                var menu = document.getElementById("category-menu");
+                if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";
+                }
+            }
 
-    // Smoothly scroll to a section
-    function scrollToSection(sectionId) {
-      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
-</head>
-<body>
-  <!-- Top Navigation -->
-  <nav class="top-nav">
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <div class="nav-logo">Delvaugh</div>
-    <div class="nav-links">
-      <a href="#hero" onclick="event.preventDefault(); scrollToSection('hero')">Home</a>
-      <a href="#about" onclick="scrollToSection('about')">About</a>
-      <a href="#services" onclick="scrollToSection('services')">Services</a>
-      <a href="#contact" onclick="scrollToSection('contact')">Contact Us</a>
-    </div>
-  </nav>
+            // Smoothly scroll to a section
+            function scrollToSection(sectionId) {
+                document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-logo">Delvaugh</div>
+            <div class="nav-links">
+                <a href="#hero" onclick="event.preventDefault(); scrollToSection('hero')">Home</a>
+                <a href="#about" onclick="scrollToSection('about')">About</a>
+                <a href="#services" onclick="scrollToSection('services')">Services</a>
+                <a href="#contact" onclick="scrollToSection('contact')">Contact Us</a>
+            </div>
+        </nav>
 
-  <!-- Category Menu (Dropdown from Hamburger) -->
-  <div id="category-menu" class="category-menu" style="display: none;">
-    <a href="#bags" class="category-link" onclick="scrollToSection('bags')">Bags</a>
-    <a href="#clothing" class="category-link" onclick="scrollToSection('clothing')">Clothing</a>
-    <a href="#accessories" class="category-link" onclick="scrollToSection('accessories')">Accessories</a>
-  </div>
+        <!-- Category Menu (Dropdown from Hamburger) -->
+        <div id="category-menu" class="category-menu" style="display: none;">
+            <a href="#bags" class="category-link" onclick="scrollToSection('bags')">Bags</a>
+            <a href="#clothing" class="category-link" onclick="scrollToSection('clothing')">Clothing</a>
+            <a href="#accessories" class="category-link" onclick="scrollToSection('accessories')">Accessories</a>
+        </div>
 
-  <!-- Main Content (Single Page with Sections) -->
-  <main>
-    <section id="hero" class="section">
-      <div class="home">
-        <div class="header-text">
-          <h1>Delvaugh</h1>
-          <h5 class="tagline">Forced to be a fashion icon. Born to be a Shadow Monarch.</h5>
-        </div>
-      </div>
-    </section>
+        <!-- Main Content (Single Page with Sections) -->
+        <main>
+            <section id="hero" class="section">
+                <div class="home">
+                    <div class="header-text">
+                        <h1>Delvaugh</h1>
+                        <h5 class="tagline">Forced to be a fashion icon. Born to be a Shadow Monarch.</h5>
+                        <a href="#about" class="button2">About</a>
+                    </div>
+                </div>
+            </section>
 
-    <section id="about" class="section">
-      <h1>About Us</h1>
-      <p>Welcome to Delvaugh, where fashion meets elegance. Our mission is to bring timeless style and premium quality to every piece we create.</p>
-    </section>
+            <section id="about" class="section">
+                <h1>About Us</h1>
+                <p>Welcome to Delvaugh, where fashion meets elegance. Our mission is to bring timeless style and premium quality to every piece we create.</p>
+            </section>
 
-    <section id="services" class="section">
-      <h1>Our Services</h1>
-      <div class="services-container">
-        <div class="service-card">
-          <h3>Custom Designs</h3>
-          <p>Get unique, tailor-made fashion pieces that suit your style.</p>
-        </div>
-        <div class="service-card">
-          <h3>Premium Materials</h3>
-          <p>We use high-quality fabrics and materials for lasting elegance.</p>
-        </div>
-        <div class="service-card">
-          <h3>Exclusive Collections</h3>
-          <p>Explore limited-edition fashion collections designed for you.</p>
-        </div>
-      </div>
-    </section>
+            <section id="services" class="section">
+                <h1>Our Services</h1>
+                <div class="services-container">
+                    <div class="service-card">
+                        <h3>Custom Designs</h3>
+                        <p>Get unique, tailor-made fashion pieces that suit your style.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Premium Materials</h3>
+                        <p>We use high-quality fabrics and materials for lasting elegance.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Exclusive Collections</h3>
+                        <p>Explore limited-edition fashion collections designed for you.</p>
+                    </div>
+                </div>
+            </section>
 
-    <section id="contact" class="section">
-      <h1>Contact Us</h1>
-      <div class="contact-info">
-        <p>Email: <a href="mailto:support@delvaugh.com">support@delvaugh.com</a></p>
-        <p>Phone: +1 234 567 890</p>
-        <p>Follow us on Instagram: <a href="https://instagram.com/delvaugh">@delvaugh</a></p>
-      </div>
-    </section>
-  </main>
+            <section id="contact" class="section">
+                <h1>Contact Us</h1>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:support@delvaugh.com">support@delvaugh.com</a></p>
+                    <p>Phone: +1 234 567 890</p>
+                    <p>Follow us on Instagram: <a href="https://instagram.com/delvaugh">@delvaugh</a></p>
+                </div>
+            </section>
+        </main>
 
-  <!-- Product Sections (Visible by Default) -->
+        <!-- Product Sections (Visible by Default) -->
 
-  <!-- Bags Section -->
-  <section id="bags" class="section">
-    <h2>Handbags</h2>
-    <div class="bagcontainer">
-      <div class="card">
-        <img src="bag1.jpg" alt="Bag 1" />
-        <div class="card-content">
-          <h3>Tempête XL</h3>
-          <p>Derby Calf</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="bag2.jpg" alt="Bag 2" />
-        <div class="card-content">
-          <h3>Pin City</h3>
-          <p>New Sellier</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="bag3.jpg" alt="Bag 3" />
-        <div class="card-content">
-          <h3>Cool Box Mini</h3>
-          <p>Torillon Soft</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- Bags Section -->
+        <section id="bags" class="section">
+            <h2>Handbags</h2>
+            <div class="bagcontainer">
+                <div class="card">
+                    <img src="bag1.jpg" alt="Bag 1" />
+                    <div class="card-content">
+                        <h3>Tempête XL</h3>
+                        <p>Derby Calf</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="bag2.jpg" alt="Bag 2" />
+                    <div class="card-content">
+                        <h3>Pin City</h3>
+                        <p>New Sellier</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="bag3.jpg" alt="Bag 3" />
+                    <div class="card-content">
+                        <h3>Cool Box Mini</h3>
+                        <p>Torillon Soft</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Clothing Section -->
-  <section id="clothing" class="section">
-    <h2>Clothing</h2>
-    <div class="clcontainer">
-      <div class="card">
-        <img src="clth1.jpg" alt="Coat 1" />
-        <div class="card-content">
-          <h3>Emerald Envy Overcoat</h3>
-          <p>Sleek and warm—a statement in modern sophistication.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="clth2.jpg" alt="Coat 2" />
-        <div class="card-content">
-          <h3>Avant-Garde Mosaic Coat</h3>
-          <p>Bold patterns meet classic tailoring for a daring look.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="clth3.jpg" alt="Coat 3" />
-        <div class="card-content">
-          <h3>Regal Plaid Trench</h3>
-          <p>A checkered trench with vintage charm and modern edge.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- Clothing Section -->
+        <section id="clothing" class="section">
+            <h2>Clothing</h2>
+            <div class="clcontainer">
+                <div class="card">
+                    <img src="clth1.jpg" alt="Coat 1" />
+                    <div class="card-content">
+                        <h3>Emerald Envy Overcoat</h3>
+                        <p>Sleek and warm—a statement in modern sophistication.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="clth2.jpg" alt="Coat 2" />
+                    <div class="card-content">
+                        <h3>Avant-Garde Mosaic Coat</h3>
+                        <p>Bold patterns meet classic tailoring for a daring look.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="clth3.jpg" alt="Coat 3" />
+                    <div class="card-content">
+                        <h3>Regal Plaid Trench</h3>
+                        <p>A checkered trench with vintage charm and modern edge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Accessories Section -->
-  <section id="accessories" class="section">
-    <h2>Accessories</h2>
-    <div class="accessories-container">
-      <div class="card">
-        <img src="acc1.jpg" alt="Wool Scarf" />
-        <div class="card-content">
-          <h3>Cozy Luxe Wool Scarf</h3>
-          <p>Ultra-soft and warm—perfect for layering.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="acc2.jpg" alt="Leather Care Kit" />
-        <div class="card-content">
-          <h3>Heritage Leather Care Kit</h3>
-          <p>A premium set to refresh and protect your leather.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="acc3.jpg" alt="Long Strap" />
-        <div class="card-content">
-          <h3>VersaFit Long Strap</h3>
-          <p>Adjustable and durable for a tailored fit with a modern edge.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-</body>
+        <!-- Accessories Section -->
+        <section id="accessories" class="section">
+            <h2>Accessories</h2>
+            <div class="accessories-container">
+                <div class="card">
+                    <img src="acc1.jpg" alt="Wool Scarf" />
+                    <div class="card-content">
+                        <h3>Cozy Luxe Wool Scarf</h3>
+                        <p>Ultra-soft and warm—perfect for layering.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="acc2.jpg" alt="Leather Care Kit" />
+                    <div class="card-content">
+                        <h3>Heritage Leather Care Kit</h3>
+                        <p>A premium set to refresh and protect your leather.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="acc3.jpg" alt="Long Strap" />
+                    <div class="card-content">
+                        <h3>VersaFit Long Strap</h3>
+                        <p>Adjustable and durable for a tailored fit with a modern edge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
