@@ -42,7 +42,7 @@ html {
   font-weight: bold;
   font-size: 20px;
   position: absolute;
-  left: 50%;
+  left: 48%;
   transform: translateX(-50%);
   color: rgb(0, 0, 0);
   font-family: "Cinzel", serif;
@@ -61,14 +61,15 @@ html {
   
   .nav-links a {
   text-decoration: none;
-  color: rgb(179, 132, 94);
-  font-family: Helvetica;
-  font-size: 14px;
+  color: rgb(63, 26, 14);
+  font-family: "Poppins", serif;
   font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
   letter-spacing: 1px;
   transition: color 0.3s ease, background-color 0.3s ease;
   display: inline-block;
-  padding: 6px 10px;
+  padding: 6px;
   }
   
   .nav-links a:hover {
@@ -125,14 +126,17 @@ html {
   display: flex;
   margin-top: 20px;
   padding: 2px 4px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: light;
   text-decoration: none;
   color: white;
   background-color: brown;
   border-radius: 6px;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   }
   
   .button2:hover
@@ -165,7 +169,7 @@ html {
   
   
   .header-text h1 {
-  color: rgb(90, 56, 46);
+  color: rgb(63, 26, 14);
   font-size: 90px;
   margin-bottom: 10px;
   font-family: "Cinzel", serif;
@@ -178,8 +182,11 @@ html {
   font-size: 15px;
   font-weight: 200;
   text-align: center;
-  font-family: Helvetica;
-  color: aliceblue;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  color: rgb(63, 48, 44);
   }
   
   /*--------------ABOUT, SERVICES, CONTACT*/
@@ -204,7 +211,7 @@ html {
   
   #about h1 {
   font-size: 36px;
-  color: #b3845e;
+  color: rgb(63, 26, 14);
   font-family: "Forum", serif;
   font-weight: 400;
   font-style: normal;
@@ -230,7 +237,7 @@ html {
   
   #services h1 {
   font-size: 36px;
-  color: #b3845e;
+  color: rgb(63, 26, 14);
   font-family: "Forum", serif;
   font-weight: 400;
   font-style: normal;
@@ -287,7 +294,7 @@ html {
   
   #contact h1 {
   font-size: 36px;
-  color: #b3845e;
+  color: rgb(63, 26, 14);
   font-family: "Forum", serif;
   font-weight: 400;
   font-style: normal;
@@ -295,8 +302,8 @@ html {
   
   .contact-info p {
   font-family: "Poppins", serif;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: 250;
+  font-style: light;
   font-size: 15px;
   }
   
@@ -409,6 +416,24 @@ html {
   color: gray;
   margin-top: 5px;
   }
+
+  /* Footer Styling */
+.footer {
+  text-align: center;
+  background-color: #f4f1eb;  /* Same background color as top navigation */
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #4f3a2d;  /* Color of the footer text */
+}
+
+.footer p {
+  margin: 0;
+  color: #7b5b43;
+}
   
   /* Mobile Friendliness: Media Queries */
   @media (max-width: 768px) {
