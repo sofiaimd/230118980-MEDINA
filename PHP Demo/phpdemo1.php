@@ -89,7 +89,7 @@
         return "Hello, $name! Welcome!";
     }
 
-    echo greet($name);
+    echo greet("Drasa");
 
     echo "<p><strong>Square of a Number</strong></p>" . "<br>";
 
