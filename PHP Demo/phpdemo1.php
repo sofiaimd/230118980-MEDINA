@@ -99,25 +99,28 @@
     
     // Example usage
     echo "The square of 5 is: " . square(5);
-
-    // Exercise No. 5
-
-    echo "<h3><strong>Exercise 5: Form Handling</strong></h3>" . "<br>";
-
-    echo "<p><strong>HTML Form</strong></p>" . "<br>";
-
     ?>
 
+    <!--Exercise No. 5-->
     <h3><strong>Exercise 5: Form Handling</strong></h3> 
-    <h2>Enter Your Name</h2>
-    <form action="process.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <p><strong>Enter Your Name</strong></p>
+    <form method="post">
+        <label for="username">Enter your name:</label>
+        <input type="text" id="username" name="username" required>
         <button type="submit">Submit</button>
     </form>
 
     <?php
-    
+    // Process form submission
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Check if the form input is set and not empty
+        if (!empty($_POST["username"])) {
+            $username = htmlspecialchars(trim($_POST["username"]));
+            echo "<h4>Hello, $username! Welcome!</h4>";
+        } else {
+            echo "<h3>Please enter a valid name.</h3>";
+        }
+    }
     ?>
 
 
