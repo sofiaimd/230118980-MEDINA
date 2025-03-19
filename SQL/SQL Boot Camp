@@ -1,0 +1,35 @@
+-- Database
+CREATE DATABASE StudentInfo;
+USE StudentInfo;
+
+-- Studinfo table
+CREATE TABLE studinfo (
+    idno INT PRIMARY KEY,
+    lastname VARCHAR(50),
+    firstname VARCHAR(50),
+    middlename VARCHAR(50),
+    course VARCHAR(50),
+    year INT
+);
+
+-- Studinfo records
+INSERT INTO studinfo (idno, lastname, firstname, middlename, course, year) VALUES
+(230118980, 'Gobyerno', 'Aang', 'Basoorang', 'BSIT', 3),
+(230118989, 'Dimatibag', 'Anne Nicole', 'Bazorro', 'BSBA', 2),
+(230173990, 'Lumalaban', 'Sofia Marie', 'Saint', 'BSA', 4),
+(231299923, 'Penduko', 'Joshua Jorge', 'Rodrigo', 'BSCE', 1),
+(230181273, 'Marcos', 'Alejandro Sandro', 'Duterte', 'BSPS', 2);
+
+-- Subjects table
+CREATE TABLE subjects (
+    coursecode VARCHAR(10) PRIMARY KEY,
+    descriptivetitle VARCHAR(100)
+);
+
+-- Subjects record
+INSERT INTO subjects (coursecode, descriptivetitle) VALUES
+('IT101', 'Introduction to Information Technology'),
+('BA202', 'Principles of Marketing'),
+('AC301', 'Intermediate Accounting'),
+('CE101', 'Engineering Mechanics 1'),
+('PS202', 'Public Administration');
